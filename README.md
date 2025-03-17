@@ -1,6 +1,6 @@
 # Teste engenheiro de dados
 
-> Nesse teste é necessário pegar os dados que estão no git, realizar o processamento e lógo em seguida
+> Nesse teste é necessário pegar os dados que estão no git, realizar o processamento e logo em seguida
 conseguir realizar as análises necessárias.
 
 ___
