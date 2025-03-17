@@ -1,0 +1,20 @@
+services:
+  metabase:
+    build: .
+    container_name: metabase
+    hostname: metabase
+    environment:
+      DISABLE_JEMALLOC: true
+      JAVA_TOOL_OPTIONS: '-XX:MaxRAMPercentage=80'
+    volumes:
+      - ./src:/src:rw
+      - ./data:/data:rw
+      - ./database:/database:rw
+      - ./analytics:/analytics:rw
+    ports:
+      - "3000:3000"
+    healthcheck:
+      test: curl --fail -I http://localhost:3000/api/health || exit 1
+      interval: 15s
+      timeout: 5s
+      retries: 5
