@@ -44,6 +44,9 @@ selecione **DuckDB**
 
 Pronto, o metabase está disponível para realizar as análises necessárias.
 
+Conseguimos acessar o banco do `DuckDB` via DBeaver, para isso é necessário criar a conexão pesquisando por `DuckDB` e 
+apontar para o arquivo `database/clinic.db`
+
 Os arquivos `.sql` respondendo as perguntas do teste estão na pasta `analytics`
 
 ### Dash respondendo as perguntas
